@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bence Utasi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>>_ bence - bash - <span></span></p>
+  </header>
+  <main>
+    <p>bence@utasi: ~$ <span>ls -l</span></p>
+    <p><span>total 2</span></p>
+    <p><span>drwxr-xr-x 3 bence bence 4096 Aug 7 22:19 leaveme.dat</span></p>
+    <p><span>drwxr-xr-x 3 bence bence 4096 Aug 7 22:19 readme.txt</span></p>
+    <p>bence@utasi: ~$ <span>more readme.txt</span></p>
+    <section>
+      <p><span>Choose on option:</span></p>
+      <p><span>{0}--Exit</span></p>
+      <p><span>{1}--About Page</span></p>
+      <p><span>{2}--Work Experience</span></p>
+      <p><span>{3}--Contact</span></p>
+    </section>
+    <p>bence@utasi: ~$<span id="cursor"> </span></p>
+  </main>
+  <footer>
+    <p></p>
+  </footer>
+  <script type="text/javascript">
+    const span = document.getElementsByTagName('span')[0];
+
+    span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+
+    window.addEventListener('resize', function() {
+      span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+    });
+
+  </script>
+  <script src="app.js">
+
+  </script>
+</body>
+
+</html>

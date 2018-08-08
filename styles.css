@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+colors {
+  #5572A2;
+  #A6A6A6;
+  #111111;
+}
+body {
+  color: #5572A2;
+  background: #111111;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+body span {
+  color: #A6A6A6;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  color: #A6A6A6;
+  margin-top: 10px;
+}
+
+main p {
+  margin: 0;
+}
+
+main pre {
+  margin-top: 0;
+}
+
+main section {
+  padding: 25px;
+  padding-bottom: 10px;
+}
+
+main ul, main ol {
+  color: lightgrey;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

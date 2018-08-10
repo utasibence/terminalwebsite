@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bence Utasi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>File: html_files/contact.html - <span></span></p>
+  </header>
+  <main>
+    <section>
+      <pre><span>
+-------------------------------------
+||                                 ||
+||          Contact Page           ||
+||                                 ||
+-------------------------------------</span></pre>
+      <form class="" action="index.html" method="post">
+        <input type="text" name="name" value="" placeholder="name" required>
+        <input type="email" name="email" value="" placeholder="email" required><br>
+        <input type="text" name="message" id="message" placeholder="message" required><br>
+        <button type="submit" name="button">submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Hit ESC to close this window</p>
+  </footer>
+  <script type="text/javascript">
+    const span = document.getElementsByTagName('span')[0];
+    const keys = document.querySelectorAll('.keys');
+    span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+
+    window.addEventListener('resize', function() {
+      span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+    });
+
+    window.addEventListener('keypress', function(event) {
+      if (event.charCode == 0) {
+        window.history.back();
+      }
+    });
+  </script>
+</body>
+
+</html>

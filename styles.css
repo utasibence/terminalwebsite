@@ -11,6 +11,10 @@ body {
   font-size: 20px;
 }
 
+body::selection {
+  color: #5572A2;
+}
+
 body span {
   color: #A6A6A6;
 }
@@ -22,6 +26,15 @@ header {
 header p {
   color: #A6A6A6;
   margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 main p {
@@ -39,6 +52,50 @@ main section {
 
 main ul, main ol {
   color: lightgrey;
+}
+
+table {
+  border: 1px solid #A6A6A6;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #A6A6A6;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: 400;
+}
+
+table th, table tr, table td {
+  border: 1px solid #A6A6A6;
+  padding: 5px;
+}
+
+input {
+  background: #111111;
+  border: 1px solid #A6A6A6;
+  height: 30px;
+  width: 200px;
+  color: #5572A2;
+  padding: 5px;
+}
+
+#message {
+  margin-top: 10px;
+  width: 417px;
+  height: 60px;;
+}
+
+button {
+  background: none;
+  color: #5572A2;
+  border: 1px solid #A6A6A6;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 body {

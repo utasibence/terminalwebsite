@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bence Utasi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>File: html_files/work.html - <span></span></p>
+  </header>
+  <main>
+    <section>
+      <pre><span>
+-------------------------------------
+||                                 ||
+||      Work Experience Page       ||
+||                                 ||
+-------------------------------------</span></pre>
+      <section>
+        <p><span>Completed Courses:</span></p>
+        <table>
+          <tr>
+            <th>course</th>
+            <th>platform</th>
+            <th>date</th>
+            <th>percentage</th>
+          </tr>
+          <tr>
+            <td>CS50's Introduction to Computer Science</td>
+            <td>edx</td>
+            <td>-</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>CS50's Web Programming with Python and JavaScript</td>
+            <td>edx</td>
+            <td>-</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Front End Web Development</td>
+            <td>treehouse</td>
+            <td>-</td>
+            <td>76%</td>
+          </tr>
+        </table>
+        <p><span>For more information: <a href="http://utasibence.hu/" target="_blank">www.utasibence.hu</a></span></p>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>Hit ESC to close this window</p>
+  </footer>
+  <script type="text/javascript">
+    const span = document.getElementsByTagName('span')[0];
+    const keys = document.querySelectorAll('.keys');
+    span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+
+    window.addEventListener('resize', function() {
+      span.innerHTML = window.innerHeight + "x" + window.innerWidth;
+    });
+
+    window.addEventListener('keypress', function(event) {
+      if (event.charCode == 0) {
+        window.history.back();
+      }
+    });
+  </script>
+</body>
+
+</html>

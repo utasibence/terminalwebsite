@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+
+// Sass variables
+$blue: #5572A2;
+$grey: #A6A6A6;
+$black: #111111;
+
+// Sass inheritance
+%grey-border {
+  border: 1px solid $grey;
+}
+
+body {
+  color: $blue;
+  background: $black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+body::selection {
+  color: $blue;
+}
+
+body span {
+  color: $grey;
+}
+
+img {
+  width: 200px;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  color: $grey;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Sass nesting
+main {
+  p {
+    margin: 0;
+  }
+
+  pre {
+    margin-top: 0;
+  }
+
+  section {
+    padding: 25px;
+    padding-bottom: 10px;
+  }
+
+  ol, ul {
+    color: lightgrey;
+  }
+}
+
+table {
+  @extend %grey-border;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: $grey;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: 400;
+}
+
+table th, table tr, table td {
+  @extend %grey-border;
+  padding: 5px;
+}
+
+input {
+  background: $black;
+  @extend %grey-border;
+  height: 30px;
+  width: 200px;
+  color: $blue;
+  padding: 5px;
+}
+
+#message {
+  margin-top: 10px;
+  width: 417px;
+  height: 60px;;
+}
+
+button {
+  background: none;
+  color: $blue;
+  @extend %grey-border;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
